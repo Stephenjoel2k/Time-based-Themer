@@ -1,0 +1,32 @@
+:root {
+  --color: #243746;
+  --color-primary: #158876;
+  --color-secondary: #0e2233;
+  --bg: #f3f5f4;
+  --bg-secondary: #fff;
+  --border-color: #ddd;
+}
+
+.morning {
+  --color: #ffffff;
+  --bg: #DEE9F1;
+  --bg-header: #F4CE2F;
+}
+
+.afternoon {
+  --color: #ffffff;
+  --bg: #CAE8FF;
+  --bg-header: #586AEB;
+}
+
+.evening {
+  --color: #ffffff;
+  --bg: #FCE278;
+  --bg-header: #FA7800;
+}
+
+.night {
+  --color: #ffffff;
+  --bg: #000000;
+  --bg-header: #161B3D;
+}
