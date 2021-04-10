@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'MusicHabits-Nuxt',
+    title: 'Music Habits',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -24,6 +24,7 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  target: 'static',
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -45,6 +46,12 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
+      name: "Music Habits",
+      short_name: "Music Habits",
+      description: "A social music listening habits tracker for Spotify users.",
+      background_color: '#eab2bb',
+      theme_color: "#eab2bb",
+      display: "fullscreen",
       lang: 'en'
     }
   },
