@@ -3,7 +3,9 @@
     <div class="header">
       <h4 class="header-appname">musichabits.me</h4>
       <div class="header-image">
-        <img src="../static/png/morning.png" height="150px" alt="A sun">
+        <img v-if="theme === 'morning'" src="../static/png/morning.png" height="150px" alt="Morning">
+        <img v-if="theme === 'afternoon'" src="../static/png/afternoon.png" height="150px" alt="Afternoon">
+        <img v-if="theme === 'evening'" src="../static/png/evening.png" height="150px" alt="Evening">
       </div>
       <div class="header-text">
         <h4 class="greeting">good {{theme}},</h4>
@@ -66,13 +68,28 @@ export default {
 
   .header-image{
     position: absolute;
+  }
+
+  .morning .header-image{
     right: 25px;
     top: 75px;
   }
 
+  .afternoon .header-image{
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50px;
+  }
+
+  .evening .header-image{
+    left: 25px;
+    top: 75px;
+  }
+
   .header-text{
-    position: absolute;
-    top: 225px;
+    position: relative;
+    top: 200px;
     padding: 0 10%;
     text-transform: capitalize;
     font-family: 'Work Sans', sans-serif;
@@ -85,6 +102,14 @@ export default {
 
   .header .name{
     font-size: 2rem;
+  }
+
+  .afternoon .header-text{
+    text-align: center;
+  }
+
+  .evening .header-text{
+    text-align: right;
   }
 
 </style>
