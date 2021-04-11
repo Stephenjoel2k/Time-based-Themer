@@ -55,7 +55,7 @@ export default {
       description: "A social music listening habits tracker for Spotify users.",
       background_color: '#eab2bb',
       theme_color: "#eab2bb",
-      display: "fullscreen",
+      display: "standalone",
       lang: 'en'
     }
   },
